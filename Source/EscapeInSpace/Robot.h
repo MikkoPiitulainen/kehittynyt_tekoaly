@@ -24,6 +24,8 @@ public:
   
   UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Robot setings")
   UMaterialInterface *SeppoMaterial;
+
+  UMaterialInstanceDynamic*RobotMaterialInstance;
     
   
 protected:
@@ -38,12 +40,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintCallable)
-  void SetMaterialToSeppo();
+    void SetMaterialToSeppo();
 
-  
+	UFUNCTION(BlueprintCallable)
+	void SetRoughness (float value);
 
-
-  
- 
-  
 };
