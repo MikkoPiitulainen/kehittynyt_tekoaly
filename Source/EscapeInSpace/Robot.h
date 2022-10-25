@@ -25,6 +25,7 @@ public:
   UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Robot setings")
   UMaterialInterface *SeppoMaterial;
 
+  UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Robot setings")
   UMaterialInstanceDynamic*RobotMaterialInstance;
     
   

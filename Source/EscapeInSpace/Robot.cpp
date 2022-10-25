@@ -22,7 +22,7 @@ ARobot::ARobot()
   
   StaticMesh->AttachToComponent(GetCapsuleComponent(), FAttachmentTransformRules::KeepRelativeTransform);  
   StaticMesh->SetRelativeLocation(FVector::ZeroVector);
-  RobotMaterialInstance = nullptr;
+  //RobotMaterialInstance = nullptr;
 }
 
 // Called when the game starts or when spawned
